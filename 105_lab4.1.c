@@ -17,7 +17,7 @@ int main()
 
     for(i=0;i<n;i++)
     {
-        if(answer[i]>max)
+        if(answer[i]<max)
             max=i;
         else if(answer[i]<min)
             min=i;
