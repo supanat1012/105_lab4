@@ -1,8 +1,12 @@
 #include<stdio.h>
+#include<string.h>
 int main()
-{   char a;
+{   char a[200];
+    int b;
 
-    scanf("%c",&a);
+    scanf("%s",a);
+    b=strlen(a);
+    printf("%d",b);
 
 
 
