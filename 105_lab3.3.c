@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {   char a[200],an[200];
-    int b;
+    int b,i=0;
 
     scanf("%s",a);
     b=strlen(a);
@@ -11,11 +11,9 @@ int main()
     {
         if(a[i-1]!=a[i])
         {
-            an[i]=a[i];
+            printf("%c",a[i]);
         }
         i++;
-
-
 
     }
 
