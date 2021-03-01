@@ -11,19 +11,19 @@ int main()
         scanf("%s",a);
         for(j=0;j<strlen(a);j++)
         {
-            if(a[j]==A)
+            if(a[j]=='A')
             {
                 z=x[1];
                 x[1]=x[2];
                 x[2]=z;
             }
-            else if(a[j]==B)
+            else if(a[j]=='B')
             {
                 z=x[0];
                 x[0]=x[3];
                 x[3]=z;
             }
-            else if(a[j]==C)
+            else if(a[j]=='C')
             {
                 z=x[0];
                 x[0]=x[2];
@@ -33,7 +33,7 @@ int main()
                 x[1]=x[3];
                 x[3]=y;
             }
-            else if(a[j]==D)
+            else if(a[j]=='D')
             {
                 z=x[0];
                 x[0]=x[1];
@@ -44,7 +44,7 @@ int main()
                 x[3]=y;
 
             }
-            else if(a[j]==E)
+            else if(a[j]=='E')
             {
                 z=x[0];
                 x[0]=x[3];
@@ -56,7 +56,14 @@ int main()
             }
 
         }
-
+        for(j=0;j<4;j++)
+        {
+            if(x[j]==1)
+            {
+                printf("%d",j+1);
+                break;
+            }
+        }
 
 
     }
