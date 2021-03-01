@@ -6,7 +6,7 @@ int main()
 
     scanf("%s",a);
     b=strlen(a);
-    //printf("%d",b);
+
     while(i<b)
     {
         if(a[i-1]!=a[i])
@@ -14,10 +14,6 @@ int main()
             printf("%c",a[i]);
         }
         i++;
-
     }
-
-
-
 
 }
