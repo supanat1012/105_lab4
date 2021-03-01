@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {   int n,i,j,z,y;
-    char a[50],x[4]={1,0,0,0};
+    char a[50],x[4]={1,0,0,0},answer[50];
 
     scanf("%d",&n);
 
@@ -55,20 +55,23 @@ int main()
                 x[1]=y;
             }
 
+
         }
         for(j=0;j<4;j++)
         {
             if(x[j]==1)
             {
-                printf("%d",j+1);
+                answer[i]=j+1;
                 break;
             }
         }
 
-
     }
 
-
+    for(j=0;j<n;j++)
+        {
+            printf("%d\n",answer[j]);
+        }
 
 
 
